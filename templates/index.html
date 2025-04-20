@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oroscopet - Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('assets/sfondo.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.9);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav h1 {
+      color: gold;
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: gold;
+    }
+
+    header {
+      text-align: center;
+      margin: 2rem 1rem;
+    }
+
+    header h2 {
+      font-size: 2rem;
+      color: gold;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: rgba(0, 0, 0, 0.75);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+      text-align: center;
+      transition: transform 0.3s;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .card h3 {
+      margin: 1rem 0 0.5rem;
+      color: #ffe066;
+    }
+
+    .card p {
+      margin: 0 1rem 1rem;
+      font-size: 0.95rem;
+      color: #ddd;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>✨ Oroscopet ✨</h1>
+    <ul>
+      <li><a href="scopri_segno.html">♈ Segni</a></li>
+      <li><a href="compatibilita.html">❤️ Compatibilità</a></li>
+      <li><a href="oroscopo_cinese.html">🐲 Cinese</a></li>
+      <li><a href="premium/index.html">✨ Premium</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h2>L'oroscopo per il tuo animale, ogni giorno, con un tocco di magia 🌟</h2>
+  </header>
+
+  <div class="card-container">
+    <a class="card" href="scopri_segno.html">
+      <img src="assets/segni.png" alt="Segni Zodiacali">
+      <h3>Scopri il Segno</h3>
+      <p>Scopri a quale segno appartiene il tuo cane o gatto.</p>
+    </a>
+    <a class="card" href="compatibilita.html">
+      <img src="assets/compatibilita.png" alt="Compatibilità">
+      <h3>Compatibilità</h3>
+      <p>Verifica l'intesa tra te e il tuo animale nelle stelle.</p>
+    </a>
+    <a class="card" href="oroscopo_cinese.html">
+      <img src="assets/oroscopo-cinese.png" alt="Oroscopo Cinese">
+      <h3>Oroscopo Cinese</h3>
+      <p>Scopri il segno cinese del tuo compagno a quattro zampe.</p>
+    </a>
+    <a class="card" href="nerone.html">
+      <img src="assets/Astronero.jpg" alt="Nerone - Il cane che ha imparato a sperare">
+      <h3>Nerone</h3>
+      <p>Leggi la storia di Nerone, il cane che ha imparato a sperare guardando le stelle.</p>
+    </a>
+    <a class="card" href="premium/index.html">
+      <img src="assets/premium_badge.png" alt="Oroscopet Premium">
+      <h3>Oroscopet Premium</h3>
+      <p>Contenuti esclusivi, affinità magiche, storie e oroscopi unici.</p>
+      <p style="font-style: italic; font-size: 0.9em; color: #ffe066; margin-top: -0.5rem;">
+        ✨ Per un periodo sarà gratis, poi deciderai tu ✨
+      </p>
+    </a>
+  </div>
+
+  <footer>
+    ✨ Guidati dalle stelle, un passo alla volta. ✨
+  </footer>
+</body>
+</html>
