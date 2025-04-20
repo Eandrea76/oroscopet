@@ -1,10 +1,10 @@
-import os
-import replicate
 from flask import Flask, request, jsonify
 from flask_cors import CORS
+import os
+import replicate
 
 app = Flask(__name__)
-CORS(app)
+CORS(app)  # Questa riga è fondamentale per abilitare le richieste da altri domini
 
 REPLICATE_API_TOKEN = os.getenv("REPLICATE_API_TOKEN")
 client = replicate.Client(api_token=REPLICATE_API_TOKEN)
@@ -28,3 +28,5 @@ def generate():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
