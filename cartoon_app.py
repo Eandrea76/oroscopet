@@ -2,23 +2,9 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 import os
 import replicate
-from flask import Flask, request, jsonify
-from flask_cors import CORS
-import replicate
-import os
 
 app = Flask(__name__)
 CORS(app)
-
-@app.route("/generate", methods=["POST"])
-def generate_cartoon():
-
-
-
-
-
-app = Flask(__name__)
-CORS(app)  # Questa riga è fondamentale per abilitare le richieste da altri domini
 
 REPLICATE_API_TOKEN = os.getenv("REPLICATE_API_TOKEN")
 client = replicate.Client(api_token=REPLICATE_API_TOKEN)
